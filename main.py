@@ -11,9 +11,9 @@ from views.admin import admin_view
 middlewares = [
     Middleware(
         TrustedHostMiddleware, 
-        allowed_hosts=['localhost', 'fapiw.geekuniversity.com.br']
+        allowed_hosts=['localhost', 'fastapi.valentim.link']
     ),
-    # Middleware(HTTPSRedirectMiddleware),
+    Middleware(HTTPSRedirectMiddleware),
 ]
 
 
